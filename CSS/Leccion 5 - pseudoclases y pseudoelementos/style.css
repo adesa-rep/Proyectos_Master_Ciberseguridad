@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-image: url(https://lumiere-a.akamaihd.net/v1/images/pp_xmen1992_herobanner_21369_2ead90c7.jpeg?region=0,0,2048,878);
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  display: flex;
+  list-style: none; /* quitar a todos los li del nav las viñetas */
+}
+
+nav li {
+  flex: 1;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  padding: 20px 0;
+  color: white;
+  text-decoration: none; /*quitar el subrayado */
+}
+
+/*HOVER Y FOCUS AL NAV */
+
+nav a:hover {
+  background-color: green; /*al pasar el cursor sobre el elemento, cambiará su estilado*/
+}
+
+nav a:focus {
+  background-color: blueviolet; /* Cambiar el fondo del enlace */
+  color: yellow; /* Cambiar el color del texto */
+  font-weight: bold;
+  text-decoration: underline; /* Subrayar el enlace */
+  /* al hacer click */
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+section li {
+  margin: 0 10px;
+  list-style-type: none; /* quitar viñetas*/
+}
+
+/* SUSTITUIR EL PUNTO DE LA LISTA POR LA X */
+
+section li::before {
+  content: 'x';
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  display: inline-block; /*permite establece ancho y alto*/
+  text-align: center; /*centra el contenido horizontalmente */
+  width: 25px;
+  height: 25px;
+  line-height: 25px; /*centra el contenido verticalmente*/
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+section a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* AÑADIR CORCHETES A LOS ENLACES */
+section a::before {
+  content: '[';
+}
+section a::af {
+  content: ']';
+}
+
+/* AÑADIR HOVER A LOS ENLACES */
+section a:hover {
+  color: red;
+  text-shadow: 2px 2px 5px rgb(221, 121, 221); /*agregar sombra al texto*/
+  /*al pasar el cursor sobre el elemento, cambiará su estilado*/
+}
+
+/* AÑADIR FOCUS A LOS ENLACES */
+section a:focus {
+  background-color: grey; /* Cambiar el fondo del enlace */
+  color: greenyellow;
+  font-weight: bold;
+  text-decoration: underline; /* Subrayar el enlace */
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.8em;
+}
