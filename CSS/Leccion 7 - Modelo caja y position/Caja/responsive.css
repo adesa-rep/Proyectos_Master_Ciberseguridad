@@ -9,7 +9,7 @@
 }
 
 /* Encabezado */
-header > h1 {
+git header > h1 {
   text-align: center;
   font-size: clamp(2rem, 3vw, 4rem); /* Escalable */
   margin-top: calc(2vh); /* Separación adaptativa */
