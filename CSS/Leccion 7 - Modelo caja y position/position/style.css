@@ -1,0 +1,49 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+p {
+  width: 60vw;
+  height: 10vh;
+  border: 5px outset plum;
+  margin: 10vh auto;
+  text-align: justify;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+.fontActivator {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: green;
+  text-decoration: underline;
+}
+
+.tooltipActivator {
+  cursor: pointer;
+  position: relative;
+}
+
+.tooltipText {
+  visibility: hidden;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  padding: 5px;
+  border-radius: 4px;
+  line-height: 1;
+  width: 300px;
+
+  /* posicionamiento relativo */
+  position: absolute;
+  bottom: 125%;
+}
+
+.tooltipActivator:hover .tooltipText {
+  visibility: visible;
+}
