@@ -35,7 +35,7 @@ header > h1 {
   border-radius: 30%; /* redondear border de la imagen */
   /* Hacer que la imagen se comporte como un elemento de bloque, en lugar de un elemento en línea. Esto permite centrar horizontalmente usando margin auto */
   display: block;
-  padding: 10px;
+  padding: 5px;
   background-color: green; /*para dar color al relleno creado con el padding*/
 }
 
