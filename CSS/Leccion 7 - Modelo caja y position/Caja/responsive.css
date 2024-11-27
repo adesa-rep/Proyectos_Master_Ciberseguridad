@@ -1,0 +1,66 @@
+/* Reset global y estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+    Verdana, sans-serif;
+  font-size: clamp(1rem, 1vw + 1rem, 2rem); /* Tamaño de fuente adaptable */
+}
+
+/* Encabezado */
+header > h1 {
+  text-align: center;
+  font-size: clamp(2rem, 3vw, 4rem); /* Escalable */
+  margin-top: calc(2vh); /* Separación adaptativa */
+}
+
+/* Tarjeta de perfil */
+.profile-card {
+  width: clamp(40vw, 60vw, 80vw); /* Ancho adaptable */
+  margin: 5vh auto; /* Centrado vertical y horizontal */
+  border: 0.5vh solid violet; /* Grosor escalable */
+  border-radius: 2vw; /* Bordes redondeados adaptables */
+  padding: 3vh 2vw; /* Espaciado interno */
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Imagen de perfil */
+.profile-image {
+  width: 30vw; /* Proporcional al ancho de la ventana */
+  max-width: 40vw; /* Límite máximo */
+  height: auto; /* Mantener proporción */
+  margin: 2vh auto; /* Centrado interno */
+  border-radius: 50%; /* Imagen circular */
+  border: 0.3vh solid #ccc; /* Borde fino adaptativo */
+}
+
+/* Nombre del perfil */
+.profile-name {
+  margin-bottom: 2vh; /* Separación adaptativa */
+  font-weight: bold;
+  font-size: clamp(1.5rem, 2vw, 3rem); /* Tamaño escalable */
+}
+
+/* Descripción */
+.profile-description {
+  margin: 2vh auto; /* Centrado */
+  padding: 2vh 3vw; /* Espaciado interno */
+  background-color: #f0f0f0;
+  border: 0.4vh solid gray; /* Borde adaptable */
+  border-radius: 1vw; /* Bordes redondeados */
+  font-size: clamp(1rem, 1.2vw, 1.5rem); /* Escalable */
+  line-height: 1.5;
+  word-wrap: break-word; /* Evitar desbordamientos */
+}
+
+/* Párrafo dentro de la descripción */
+.profile-description p {
+  background-color: aqua;
+  padding: 1vh;
+  border-radius: 0.5vw; /* Bordes redondeados */
+  font-size: clamp(1rem, 1.5vw, 1.8rem); /* Escalable */
+  word-wrap: break-word; /* Evitar desbordamientos */
+}

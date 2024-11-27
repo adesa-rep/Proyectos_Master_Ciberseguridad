@@ -1,0 +1,74 @@
+/* Reset global y estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana,
+    sans-serif;
+  font-size: 16px;
+}
+
+html,
+body {
+  min-width: 250px;
+  overflow-x: hidden;
+}
+
+/* Encabezado */
+header > h1 {
+  text-align: center;
+  font-size: clamp(1.5rem, 2rem + 2vw, 3rem); /* Tamaño adaptable */
+  margin-top: calc(10px + 1vh);
+}
+
+/* Tarjeta de perfil */
+.profile-card {
+  margin: 50px auto; /* Centra horizontalmente respecto al main */
+  border: 5px solid green;
+  max-width: 350px; /* Ancho máximo absoluto */
+  min-width: 250px; /* Ancho mínimo absoluto */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  /* text-align: center; */
+}
+
+/* Imagen de perfil */
+.profile-image {
+  width: 80%; /* Proporcional al ancho del contenedor profile-card */
+  max-width: 250px; /* Asegura un tamaño que no exceda el máximo de la caja profile-card */
+  margin: 20px auto; /* Centra dentro de profile-card */
+  border-radius: 30%; /* redondear border de la imagen */
+  /* Hacer que la imagen se comporte como un elemento de bloque, en lugar de un elemento en línea. Esto permite centrar horizontalmente usando margin auto */
+  display: block;
+  padding: 10px;
+  background-color: green; /*para dar color al relleno creado con el padding*/
+}
+
+/* Nombre del perfil */
+.profile-name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Descripción */
+.profile-description {
+  margin: 10px auto; /* Centra y separa */
+  max-width: 90%; /* Proporcional al contenedor profile-card */
+  min-width: 200px; /* Tamaño mínimo absoluto */
+  padding: 10px;
+  border: 3px solid green;
+  background-color: rgba(0, 224, 224, 0.7);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+/* Párrafo dentro de la descripción */
+.profile-description p {
+  background-color: rgba(0, 255, 0, 0.3);
+  padding: 10px;
+  margin: 0; /* Asegura que no se exceda del contenedor */
+  font-size: clamp(1rem, 1rem + 1vw, 18px); /* Escalable */
+  word-wrap: break-word; /* Evita desbordamientos de texto */
+  text-align: justify;
+}
