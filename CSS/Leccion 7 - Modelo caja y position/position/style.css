@@ -25,6 +25,7 @@ p {
 
 .tooltipActivator {
   cursor: pointer;
+  /* para que el tooltip se posicione en relacion a este contenedor */
   position: relative;
 }
 
